@@ -1,0 +1,13 @@
+*
+!.gitignore
+!.bashrc
+!.zshrc
+!scripts
+!scripts/**
+!pyenvs/*.txt
+!pyenvs
+!.hushlogin
+!useful_commands.md
+!.screenrc
+!.vimrc
+!.config/**
