@@ -15,7 +15,8 @@ sudo apt install -y \
     screen \
     grip \
     zip \
-    tree
+    tree \
+    neovim
 
 # make sure the screen is set up correctly
 mkdir ~/.screen && chmod 700 ~/.screen

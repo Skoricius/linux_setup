@@ -1,5 +1,8 @@
 # my_linux_setup
 
+## Fonts
+https://github.com/microsoft/cascadia-code
+
 # Useful commands
 ## Reverse ssh
 ```
