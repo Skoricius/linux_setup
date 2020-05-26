@@ -118,10 +118,6 @@ fi
 export DISPLAY=localhost:0.0
 
 
-eval `keychain --eval dreams-ai_server`
-#> /dev/null 2>&1`
-eval `keychain --eval dh_raspi`
-#> /dev/null 2>&1`
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 
