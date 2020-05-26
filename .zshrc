@@ -14,20 +14,14 @@ export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 
 alias tif2png="sh ~/bash/convert_png.sh"
-alias mlenv=". /mnt/c/Users/lukas/python_envs/wsl_ml_env/bin/activate"
-alias ocrenv=". /mnt/c/Users/lukas/python_envs/wsl_ocr_env/bin/activate"
 alias count="find . -maxdepth 1 -type f | wc -l"
-alias clip="clip.exe"
 alias env=". ~/pyenvs/env/bin/activate"
-alias home="cd /mnt/c/Users/lukas"
 . ~/pyenvs/env/bin/activate
 export SCREENDIR=/home/luka/.screen
 alias cd.="cd .."
 alias cd..="cd .."
 alias count="find . -maxdepth 1 -type f | wc -l"
-open() {
-    cmd.exe /C start "" "$1" 
-}
+
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 
 alias vi="nvim"
