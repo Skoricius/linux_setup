@@ -118,11 +118,16 @@ fi
 export DISPLAY=localhost:0.0
 
 
+eval `keychain --eval dreams-ai_server`
+#> /dev/null 2>&1`
+eval `keychain --eval dh_raspi`
+#> /dev/null 2>&1`
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 
 # alias tif2png="sh /mnt/c/Users/lukas/OneDrive\ -\ University\ of\ Cambridge/Tech/convert_png.sh"
-alias env=". /mnt/c/Users/lukas/python_envs/env/bin/activate"
-if [ -t 1  ]; then
-    exec zsh
-fi
+# alias mlenv=". /mnt/c/Users/lukas/python_envs/wsl_ml_env/bin/activate"
+# alias ocrenv=". /mnt/c/Users/lukas/python_envs/wsl_ocr_env/bin/activate"
+#if [ -t 1  ]; then
+#    exec zsh
+#fi
