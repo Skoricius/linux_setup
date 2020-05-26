@@ -10,5 +10,6 @@
 !useful_commands.md
 !.screenrc
 !.vimrc
-!.config/**
+!.config
+!.config/nvim/init.vim
 !README.md
