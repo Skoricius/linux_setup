@@ -15,6 +15,11 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 nmap <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
+set guicursor=
+"set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+"      \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+"      \,sm:block-blinkwait175-blinkoff150-blinkon175
+
 
 "let g:airline_powerline_fonts = 1
 
