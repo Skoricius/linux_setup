@@ -9,7 +9,7 @@ bash install_apt.sh
 bash set_python_env.sh
 
 # set up vim
-bash set_up_vim.sh
+bash set_up_neovim.sh
 
 # set up zsh
 bash set_up_zsh.sh
