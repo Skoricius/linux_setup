@@ -1,5 +1,17 @@
 # my_linux_setup
 
+## Setting up
+1) ssh into the server and paste the github private key (or create a new pair)
+2) Clone the git repository
+```
+git init ~/
+git remote add origin git@github.com:Skoricius/linux_setup.git
+git fetch
+git checkout -t origin/master
+```
+3) Run parts of the scripts/linux_setup.sh that you need
+
+
 ## Fonts
 https://github.com/microsoft/cascadia-code
 
