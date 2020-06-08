@@ -2,6 +2,15 @@
 
 ## Setting up
 1) ssh into the server and paste the github private key (or create a new pair)
+2) Edit .ssh/config:
+```
+echo "
+Host github.com
+  HostName github.com
+  User skoricius
+  IdentityFile ~/.ssh/mygithub
+ " >> ~/.ssh/config
+ ```
 2) Clone the git repository
 ```
 git init ~/
