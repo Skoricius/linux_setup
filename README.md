@@ -39,6 +39,9 @@ Host dreams-config
 " >> ~/.ssh/config
 ```
 
+## Setting up VPN on a private server
+https://github.com/StreisandEffect/streisand
+
 ## Markdown to pdf
 grip <filename>.md
 
