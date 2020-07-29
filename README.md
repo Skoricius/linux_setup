@@ -53,6 +53,10 @@ https://github.com/StreisandEffect/streisand
 
 ## Markdown to pdf
 grip <filename>.md
+  
+## Downloading podcasts and youtube
+youtube: https://ytdl-org.github.io/youtube-dl/index.html
+podcasts: https://github.com/brtmr/podfox
 
 # TODO:
 - need to set up my ssh config and add keys separately
