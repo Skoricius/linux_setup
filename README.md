@@ -58,6 +58,3 @@ grip <filename>.md
 youtube: https://ytdl-org.github.io/youtube-dl/index.html
 
 podcasts: https://github.com/brtmr/podfox
-
-# TODO:
-- need to set up my ssh config and add keys separately
