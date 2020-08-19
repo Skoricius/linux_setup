@@ -1,14 +1,17 @@
 # my_linux_setup
 
 ## Setting up
-1) ssh into the server and paste the github private key (or create a new pair)
+1) ssh into the server and paste the github private key (or create a new pair):
+```
+ssh-keygen -t rsa
+```
 2) Edit .ssh/config:
 ```
 echo "
 Host github.com
   HostName github.com
   User skoricius
-  IdentityFile ~/.ssh/mygithub
+  IdentityFile ~/.ssh/id_rsa
  " >> ~/.ssh/config
  ```
 2) Clone the git repository
