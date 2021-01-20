@@ -7,6 +7,7 @@ sudo apt install -y \
     git \
     curl \
     wget \
+    rsync \
     python3.7 \
     zsh \
     imagemagick \
