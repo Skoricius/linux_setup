@@ -51,6 +51,12 @@ Host dreams-config
 " >> ~/.ssh/config
 ```
 
+## Transferring files
+Using rsync (faster than sftp and only transferres deltas)
+```
+rsync -azP <remote_host>:<remote_folder> <local_folder>
+```
+
 ## Setting up VPN on a private server
 https://github.com/StreisandEffect/streisand
 
