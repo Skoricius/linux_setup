@@ -22,6 +22,7 @@ alias cd.="cd .."
 alias cd..="cd .."
 alias count="find . -maxdepth 1 -type f | wc -l"
 alias countdir="find . -mindepth 1-maxdepth 1 -type d | wc -l"
+alias dirspace="du -h --max-depth=1 | sort -h"
 
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 
