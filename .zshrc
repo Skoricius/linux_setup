@@ -15,8 +15,6 @@ export PATH=$GOPATH:$GOPATH/bin:$PATH
 
 alias tif2png="sh ~/bash/convert_png.sh"
 alias count="find . -maxdepth 1 -type f | wc -l"
-alias env=". ~/pyenvs/env/bin/activate"
-. ~/pyenvs/env/bin/activate
 export SCREENDIR=/home/luka/.screen
 alias cd.="cd .."
 alias cd..="cd .."
