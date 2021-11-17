@@ -10,7 +10,6 @@ sudo apt install -y \
     rsync \
     python3 \
     zsh \
-    imagemagick \
     screen \
     grip \
     zip \
