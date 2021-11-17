@@ -1,5 +1,5 @@
 # update and upgrade
-sudo apt update && sudo apt -y upgrade
+#sudo apt update && sudo apt -y upgrade
 
 # install a few necessary things
 sudo apt install -y \
@@ -8,11 +8,8 @@ sudo apt install -y \
     curl \
     wget \
     rsync \
-    python3.7 \
+    python3 \
     zsh \
-    imagemagick \
-    netstat \
-    npm \
     screen \
     grip \
     zip \
