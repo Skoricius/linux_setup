@@ -3,20 +3,61 @@ import logging
 import sys
 from logging import Logger
 from logging.handlers import BufferingHandler
+from telegram import Update
+from telegram.ext import Updater, MessageHandler, \
+    Filters, CallbackContext, CommandHandler
+import logging
+from datetime import datetime
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO)
 
 bot_token = "TOKEN"
+chat_id_glados = "-1001158892332"
+chat_id_potato = "952789835"
+
+
+def create_updater_example():
+    """Note: this runs PotatoGlados and can be interacted with.
+    """
+    def start(update: Update, context: CallbackContext):
+        print(update.effective_chat.id)
+        context.bot.send_message(
+            chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+
+    def time_update(update: Update, context: CallbackContext):
+        time = str(datetime.now())
+        context.bot.send_message(
+            chat_id=update.effective_chat.id, text=time)
+
+    def echo(update: Update, context: CallbackContext):
+        context.bot.send_message(
+            chat_id=update.effective_chat.id, text=update.message.text)
+    updater = Updater(token=bot_token, use_context=True)
+    dispatcher = updater.dispatcher
+
+    start_handler = CommandHandler('start', start)
+    update_handler = CommandHandler('update', time_update)
+    dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(update_handler)
+
+    echo_handler = MessageHandler(Filters.text & (~Filters.command), echo)
+    dispatcher.add_handler(echo_handler)
+    # updater.bot.send_message(updater.dispatcher., text)
+    updater.start_polling()
+
+
 BOT = telegram.Bot(token=bot_token)
 
 
-def send_message(message, chat_id="-1001158892332"):
+def send_message(message, chat_id=chat_id_glados):
     BOT.send_message(chat_id=chat_id, text=message)
 
 
 class BotHandler(BufferingHandler):
-    def __init__(self, bot, chat_id="-1001158892332", capacity=1):
+    def __init__(self, bot, chat_id=chat_id_glados, capacity=1):
         super().__init__(capacity)
         self.bot = bot
-        self.chat_id = "-1001158892332"
+        self.chat_id = chat_id_glados
         self.level = logging.INFO
 
         # create formatter and add it to the handlers
@@ -53,4 +94,6 @@ class BotLogger(Logger):
 
 
 if __name__ == "__main__":
-    send_message("Process done!")
+
+    # create_updater_example()
+    send_message("Process done!", chat_id=chat_id_potato)
