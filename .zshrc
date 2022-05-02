@@ -12,6 +12,9 @@ source $ZSH/oh-my-zsh.sh
 # my edits
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
+export TELEGRAM_TOKEN=
+export TELEGRAM_CHAT_ID=
+
 
 alias tif2png="sh ~/bash/convert_png.sh"
 alias count="find . -maxdepth 1 -type f | wc -l"

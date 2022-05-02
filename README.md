@@ -21,11 +21,20 @@ git remote add origin git@github.com:Skoricius/linux_setup.git
 git fetch
 git checkout -t origin/master
 ```
-3) Run parts of the scripts/linux_setup.sh that you need
+3) Run parts of the scripts/linux_setup.sh that you 
 
+# Using telegram bot
 
-## Fonts
-https://github.com/microsoft/cascadia-code
+Add token and chat id environmental variables to `.zshrc`:
+
+```bash
+export TELEGRAM_TOKEN=<token>
+export TELEGRAM_CHAT_ID=<chat_id>
+```
+
+Copy `telegram` binary to a folder in your path `cp telegram /usr/bin`.
+
+Run with `telegram <message>`.
 
 # Useful commands
 ## Reverse ssh
@@ -69,3 +78,6 @@ podcasts: https://github.com/brtmr/podfox
 
 ## Mapping network drive (cmd)
 net use z: \\remotepc\sharename
+
+## Fonts
+https://github.com/microsoft/cascadia-code
