@@ -2,6 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="spaceship"
 ZSH_THEME="bira"
 
 # Add wisely, as too many plugins slow down shell startup.
@@ -58,3 +59,4 @@ alias pip='noglob pip'
 alias clearcache='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
 alias sendtelegram="python ~/telegram_bot.py"
 desktop='/mnt/c/Users/LukaSkoric/OneDrive\ -\ Riverlane/Desktop'
+alias freememory='sudo sh -c "/bin/echo 3 > /proc/sys/vm/drop_caches"'
