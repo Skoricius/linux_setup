@@ -66,6 +66,10 @@ Using rsync (faster than sftp and only transferres deltas)
 rsync -azP <remote_host>:<remote_folder> <local_folder>
 ```
 
+For a file server, this is a nice utility: https://github.com/sigoden/duf
+Just download the binary and run: `duf -b 0.0.0.0` and remember to allow the port through a firewall:
+`sudo ufw allow 5000`
+
 ## Setting up VPN on a private server
 https://github.com/StreisandEffect/streisand
 
