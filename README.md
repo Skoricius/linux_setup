@@ -70,7 +70,7 @@ For a file server, this is a nice utility: https://github.com/sigoden/duf
 Just download the binary and run: `duf -b 0.0.0.0` and remember to allow the port through a firewall:
 `sudo ufw allow 5000`
 
-For Google drive uploads, use this: https://www.bbc.co.uk/news/health-49877237
+For Google drive uploads, use [gdrive](https://github.com/prasmussen/gdrive).
 
 ## Setting up VPN on a private server
 https://github.com/StreisandEffect/streisand
