@@ -71,6 +71,9 @@ Just download the binary and run: `duf -b 0.0.0.0` and remember to allow the por
 `sudo ufw allow 5000`
 
 For Google drive uploads, use [gdrive](https://github.com/prasmussen/gdrive).
+```
+go install github.com/prasmussen/gdrive@latest
+```
 
 ## Setting up VPN on a private server
 https://github.com/StreisandEffect/streisand
