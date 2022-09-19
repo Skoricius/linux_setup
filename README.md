@@ -39,7 +39,7 @@ Run with `telegram <message>`.
 # Useful commands
 ## Reverse ssh
 ```
-ssh -N -L 8001:localhost:8888 luka@dreams-ai.com
+ssh -N -L 8001:localhost:8888 <user>@<server>
 ```
 
 (local-port:remote-port server-address)
@@ -52,11 +52,11 @@ ssh-copy-id -i $HOME/.ssh/id_rsa.pub user@server
 Add ssh key to ~/.ssh/config:
 ```
  echo "
-Host dreams-config
-  HostName dreams-ai.com
+Host <name>
+  HostName <server>
   Port 222
   User root
-  IdentityFile ~/.ssh/id_rsa_steve
+  IdentityFile ~/.ssh/id_rsa
 " >> ~/.ssh/config
 ```
 
