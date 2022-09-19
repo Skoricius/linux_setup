@@ -21,7 +21,9 @@ git remote add origin git@github.com:Skoricius/linux_setup.git
 git fetch
 git checkout -t origin/master
 ```
-3) Run parts of the scripts/linux_setup.sh that you 
+3) Run parts of the scripts/linux_setup.sh that you require.
+The basic ones are `install_apt.sh` that installs some basic utilities that I like to use.
+Then, I use `set_up_neovim.sh` and `set_up_zsh.sh` for neovim editor and zsh shell.
 
 # Using telegram bot
 
