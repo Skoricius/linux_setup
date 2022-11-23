@@ -16,8 +16,6 @@ export PATH=$GOPATH:$GOPATH/bin:$PATH
 export TELEGRAM_TOKEN=
 export TELEGRAM_CHAT_ID=
 
-
-alias tif2png="sh ~/bash/convert_png.sh"
 alias count="find . -maxdepth 1 -type f | wc -l"
 export SCREENDIR=/home/luka/.screen
 alias cd.="cd .."
@@ -25,7 +23,7 @@ alias cd..="cd .."
 alias count="find . -maxdepth 1 -type f | wc -l"
 alias countdir="find . -mindepth 1-maxdepth 1 -type d | wc -l"
 alias dirspace="du -h --max-depth=1 | sort -h"
-
+alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 
 alias vi="nvim"
@@ -38,25 +36,17 @@ LS_COLORS='no=00:fi=00:di=34:ow=34;40:ln=35:pi=30;44:so=35;44:do=35;44:bd=33;44:
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 export TERM=xterm-256color
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/luka/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/luka/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/luka/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/luka/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
 export LIBGL_ALWAYS_INDIRECT=1
 alias pip='noglob pip'
 alias clearcache='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
-alias sendtelegram="python ~/telegram_bot.py"
-desktop='/mnt/c/Users/LukaSkoric/OneDrive\ -\ Riverlane/Desktop'
 alias freememory='sudo sh -c "/bin/echo 3 > /proc/sys/vm/drop_caches"'
+#alias python=python3.10
+#alias pip=pip3.10
+
+# ====================
+# POETRY
+# ====================
+
+# mkdir -p $ZSH_CUSTOM/plugins/poetry
+# poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
