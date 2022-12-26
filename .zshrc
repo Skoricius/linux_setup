@@ -30,6 +30,8 @@ alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 
 alias vi="nvim"
 alias vim="nvim"
+# add nvim as default editor
+export EDITOR=nvim
 
 #-------------------
 # LS colors
