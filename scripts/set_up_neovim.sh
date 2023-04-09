@@ -1,3 +1,4 @@
 sudo apt install -y neovim
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone https://github.com/Skoricius/astro_config ~/.config/nvim/lua/user
+cargo install bottom --locked
