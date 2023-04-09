@@ -16,3 +16,8 @@ Transmission needs to have open port 51413:
 sudo ncp-config
 Look for enable/disable web-gui. Also need to run
 `sudo systemctl disable apache2`
+
+## Wireguard
+Default utility `wg`, use `wg-quick` for quicker setup.
+To generate qr code:
+`qrencode -t ansiutf8 < home.conf`
