@@ -1,5 +1,5 @@
 # update and upgrade
-#sudo apt update && sudo apt -y upgrade
+sudo apt update && sudo apt -y upgrade
 
 # install a few necessary things
 sudo apt install -y \
@@ -10,11 +10,6 @@ sudo apt install -y \
     rsync \
     python3 \
     zsh \
-    screen \
     grip \
     zip \
-    tree \
-    neovim
-
-# make sure the screen is set up correctly
-mkdir ~/.screen && chmod 700 ~/.screen
+    tree 
