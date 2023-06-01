@@ -12,4 +12,5 @@ sudo apt install -y \
     zsh \
     grip \
     zip \
+    build-essentials \
     tree 
