@@ -26,8 +26,7 @@ alias dirspace="du -h --max-depth=1 | sort -h"
 alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 
-alias vi="nvim"
-alias vim="nvim"
+alias vi="~/bin/nvim.appimage"
 # add nvim as default editor
 export EDITOR=nvim
 
