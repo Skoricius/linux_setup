@@ -11,8 +11,7 @@ plugins=(git extract git-extras zsh-autosuggestions last-working-dir)
 source $ZSH/oh-my-zsh.sh
 
 # my edits
-export GOPATH=$HOME/gopath
-export PATH=$GOPATH:$GOPATH/bin:$PATH
+export PATH="~/.local/bin":$PATH
 export TELEGRAM_TOKEN=
 export TELEGRAM_CHAT_ID=
 
@@ -47,6 +46,6 @@ alias pip='noglob pip'
 # POETRY
 # ====================
 
-mkdir -p $ZSH_CUSTOM/plugins/poetry
-poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+# mkdir -p $ZSH_CUSTOM/plugins/poetry
+# poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
