@@ -25,8 +25,8 @@ alias countdir="find . -mindepth 1-maxdepth 1 -type d | wc -l"
 alias dirspace="du -h --max-depth=1 | sort -h"
 alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
-
-alias vi="~/bin/nvim.appimage"
+alias lgit="~/.local/bin/lazygit"
+alias vi="~/.local/bin/nvim.appimage"
 # add nvim as default editor
 export EDITOR=nvim
 
@@ -40,8 +40,6 @@ export TERM=xterm-256color
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
 export LIBGL_ALWAYS_INDIRECT=1
 alias pip='noglob pip'
-alias clearcache='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
-alias freememory='sudo sh -c "/bin/echo 3 > /proc/sys/vm/drop_caches"'
 #alias python=python3.10
 #alias pip=pip3.10
 
@@ -49,6 +47,6 @@ alias freememory='sudo sh -c "/bin/echo 3 > /proc/sys/vm/drop_caches"'
 # POETRY
 # ====================
 
-# mkdir -p $ZSH_CUSTOM/plugins/poetry
-# poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+mkdir -p $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
