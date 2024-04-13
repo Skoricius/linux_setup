@@ -9,4 +9,6 @@ wget https://github.com/jesseduffield/lazygit/releases/download/v0.41.0/lazygit_
 tar -xf lazygit_0.41.0_Linux_x86_64.tar.gz
 mv lazygit ~/.local/bin
 
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+
 

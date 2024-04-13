@@ -16,7 +16,6 @@ export TELEGRAM_TOKEN=
 export TELEGRAM_CHAT_ID=
 
 alias count="find . -maxdepth 1 -type f | wc -l"
-export SCREENDIR=/home/luka/.screen
 alias cd.="cd .."
 alias cd..="cd .."
 alias count="find . -maxdepth 1 -type f | wc -l"
@@ -26,7 +25,7 @@ alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 alias lgit="~/.local/bin/lazygit"
 alias vi="~/.local/bin/nvim.appimage"
-# add nvim as default editor
+# alias cd=z
 export EDITOR=nvim
 
 #-------------------
@@ -36,9 +35,7 @@ LS_COLORS='no=00:fi=00:di=34:ow=34;40:ln=35:pi=30;44:so=35;44:do=35;44:bd=33;44:
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 export TERM=xterm-256color
 
-export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
-export LIBGL_ALWAYS_INDIRECT=1
-alias pip='noglob pip'
+# alias pip='noglob pip'
 #alias python=python3.10
 #alias pip=pip3.10
 
