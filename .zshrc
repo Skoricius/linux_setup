@@ -2,7 +2,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="spaceship"
 ZSH_THEME="bira"
 
 # Add wisely, as too many plugins slow down shell startup.
@@ -11,7 +10,7 @@ plugins=(git extract git-extras zsh-autosuggestions last-working-dir)
 source $ZSH/oh-my-zsh.sh
 
 # my edits
-export PATH="~/.local/bin":$PATH
+export PATH="$HOME/.local/bin":$PATH
 export TELEGRAM_TOKEN=
 export TELEGRAM_CHAT_ID=
 
@@ -25,7 +24,7 @@ alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 alias lgit="~/.local/bin/lazygit"
 alias vi="~/.local/bin/nvim.appimage"
-# alias cd=z
+alias cd=z
 export EDITOR=nvim
 
 #-------------------
@@ -43,6 +42,6 @@ export TERM=xterm-256color
 # POETRY
 # ====================
 
-# mkdir -p $ZSH_CUSTOM/plugins/poetry
-# poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
-eval "$(zoxide init zsh)"
+mkdir -p $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+eval "$($HOME/.local/bin/zoxide init zsh)"
