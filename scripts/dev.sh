@@ -11,5 +11,6 @@ tar -xf lazygit_0.41.0_Linux_x86_64.tar.gz
 mv lazygit ~/.local/bin
 
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
