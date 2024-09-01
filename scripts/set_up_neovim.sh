@@ -6,3 +6,5 @@ mv nvim.appimage ~/.local/bin/nvim.appimage
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 git clone git@github.com:Skoricius/nvim_config.git
+mkdir -p ~/.config
+mv nvim_config ~/.config/nvim

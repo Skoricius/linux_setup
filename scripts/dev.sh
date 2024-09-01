@@ -12,5 +12,5 @@ mv lazygit ~/.local/bin
 
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
+cp ../.tmux.conf ~
 
