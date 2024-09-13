@@ -1,8 +1,6 @@
 mkdir -p ~/.local/bin
 sh ./set_up_zsh.sh
 sh ./set_up_neovim.sh
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 sudo apt-get install ripgrep
 sh ./set_up_poetry.sh
 # change version if necessary
