@@ -1,0 +1,4 @@
+alias msinfo='sinfo -o "%n %e %m %a %c %C"'
+alias msqueue='squeue -o"%.7i %.9P %.8j %.8u %.2t %.10M %.6D %C"'
+
+
