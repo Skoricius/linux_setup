@@ -24,7 +24,7 @@ alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 alias lgit="~/.local/bin/lazygit"
 alias vi="~/.local/bin/nvim.appimage"
-alias acpoet="source $(poetry env info --path)/bin/activate"
+alias acpoet='source $(poetry env info --path)/bin/activate'
 alias cd=z
 alias msync="rsync -axS --info=progress2"
 export EDITOR=nvim
