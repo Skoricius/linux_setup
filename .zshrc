@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # my edits
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
-export TELEGRAM_TOKEN=1120452441:AAFkc-lVQwfdRwM1k9JaxqXXpbvnzhH9Evs
+export TELEGRAM_TOKEN=
 export TELEGRAM_CHAT_ID=952789835
 # echo "started"
 
