@@ -1,0 +1,329 @@
+{
+  "center-editor-window.threeStateToggle": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "extensions.ignoreRecommendations": false,
+  "[javascript]": {},
+  "git.confirmSync": false,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "python.languageServer": "Pylance",
+  "python.testing.promptToConfigure": false,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "editor.wordWrap": "on",
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "jupyter.askForKernelRestart": false,
+  "spellright.language": [
+    "en-GB"
+  ],
+  "terminal.integrated.inheritEnv": false,
+  "files.watcherExclude": {
+    "env/**": true
+  },
+  "ltex.language": "en-GB",
+  "remote.SSH.connectTimeout": 20,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.h5": "h5web.fallback-viewer",
+    "file:/**/*.csv": "jupyter-data-wrangler",
+    "*.csv": "default"
+  },
+  "remote.SSH.enableX11Forwarding": false,
+  "remote.SSH.showLoginTerminal": true,
+  "ltex.disabledRules": {
+    "en-GB": [
+      "PASSIVE_VOICE"
+    ]
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "git.suggestSmartCommit": false,
+  "[rust]": {},
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportPrivateImportUsage": "none"
+  },
+  "autoDocstring.docstringFormat": "numpy",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "editor.lineNumbers": "on",
+  "editor.glyphMargin": true,
+  "editor.minimap.enabled": true,
+  "files.associations": {
+    ".coveragerc": "plaintext"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "zenMode.hideLineNumbers": false,
+  "rust-analyzer.debug.engine": "vadimcn.vscode-lldb",
+  "rust-analyzer.debug.openDebugPane": true,
+  "git.openRepositoryInParentFolders": "never",
+  "notebook.lineNumbers": "on",
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "lldb.suppressUpdateNotifications": true,
+  "notebook.formatOnSave.enabled": true,
+  "window.commandCenter": true,
+  "pylint.args": [
+    "--max-line-length=89"
+  ],
+  "spellright.latexSpellParameters": [
+    "author",
+    "title",
+    "subtitle",
+    "date",
+    "chapter",
+    "section\\*?",
+    "subsection\\*?",
+    "subsubsection\\*?",
+    "part",
+    "paragraph",
+    "subparagraph",
+    "text(rm|sf|tt|md|bf|up|it|sl|sc|normal)",
+    "underline",
+    "emph",
+    "item",
+    "footnote(text)?",
+    "caption(of)?",
+    "subcaption(of)?",
+    "multicolumn",
+    "href",
+    "hyperref",
+    "institute",
+    "frametitle",
+    "framesubtitle",
+    "begin\\{frame\\}"
+  ],
+  "flake8.args": [
+    "--max-line-length=89"
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "remoteHub.commitDirectlyWarning": "off",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "solidity.telemetry": false,
+  "solidity.defaultCompiler": "localNodeModule",
+  "editor.defaultFormatter": "ms-python.autopep8",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "makefile.configureOnOpen": false,
+  "dataWrangler.columnInsights.displayOnOpen": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.fontLigatures": true,
+  "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
+  "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "pythonTestExplorer.testFramework": "pytest",
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 4,
+  "indentRainbow.errorColor": "rgba(128,32,32,0.1)",
+  "dataWrangler.experiments.copilot.enabled": false,
+  "dataWrangler.panels.displayOnTabFocus": false,
+  "indentRainbow.ignoreErrorLanguages": [
+    "python",
+    "markdown"
+  ],
+  "cmake.showConfigureWithDebuggerNotification": false,
+  "debug.onTaskErrors": "abort",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  // these settings are 'false' by default, so removing those should also work
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "cmake.debugConfig": {
+    "name": "(lldb) Launch",
+    "type": "lldb",
+    "request": "launch",
+    "program": "${command:cmake.launchTargetPath}",
+    "args": [],
+    "cwd": "${workspaceFolder}",
+    "stopAtEntry": false,
+    "externalConsole": false,
+    "MIMode": "lldb",
+    "miDebuggerPath": "/usr/bin/lldb"
+  },
+  "python.analysis.autoFormatStrings": true,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "m",
+        "z",
+        "J",
+        "`",
+        "z"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z",
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "<C-d>",
+        "z",
+        "z",
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+      ],
+      "commands": [
+        "bookmarks.listFromAllFiles"
+      ]
+    },
+    {
+      "before": [
+        "<C-s>",
+      ],
+      "commands": [
+        "workbench.action.files.save",
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine",
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "leader",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine",
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-s>": true,
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // To improve performance,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.sneak": true,
+  "vim.sneakReplacesF": true,
+  "vim.easymotionDimBackground": false
+}
