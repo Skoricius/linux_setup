@@ -92,7 +92,7 @@ function y() {
 }
 
 # nnn configuration
-alias nn="nnn -e"
+alias n="nnn -e"
 alias nnn="nnn -e"
 set --export NNN_FIFO "/tmp/nnn.fifo"# nnn configuratioalias ls="nnn -e"
 export NNN_PLUG='f:fzcd;v:imgview'
