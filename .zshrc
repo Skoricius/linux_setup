@@ -41,6 +41,15 @@ alias lgit="lazygit"
 export EDITOR=nvim
 
 #-------------------
+# TMUX
+#-------------------
+# start in tmux if available
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  tmux a -d || exec tmux new -s default;
+fi
+
+
+#-------------------
 # LS colors
 #-------------------
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
