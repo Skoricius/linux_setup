@@ -25,6 +25,9 @@ alias count="find . -maxdepth 1 -type f | wc -l"
 export SCREENDIR=/home/luka/.screen
 alias cd.="cd .."
 alias cd..="cd .."
+function cdc() {
+    cd "$1" && code .
+}
 alias count="find . -maxdepth 1 -type f | wc -l"
 alias countdir="find . -mindepth 1-maxdepth 1 -type d | wc -l"
 alias dirspace="du -h --max-depth=1 | sort -h"
@@ -40,14 +43,14 @@ alias lgit="lazygit"
 # add nvim as default editor
 export EDITOR=nvim
 
+
 #-------------------
 # TMUX
 #-------------------
 # start in tmux if available
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux a -d || exec tmux new -s default;
-fi
-
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   tmux a -d || exec tmux new -s default;
+# fi
 
 #-------------------
 # LS colors
@@ -101,7 +104,7 @@ function y() {
 }
 
 # nnn configuration
-# n alias to cd on quit nnn
+# n alias to nnn with cd on quit
 n ()
 {
     # Block nesting of nnn in subshells
@@ -133,5 +136,5 @@ n ()
     }
 }
 set --export NNN_FIFO "/tmp/nnn.fifo"# nnn configuratioalias ls="nnn -e"
-export NNN_PLUG='f:fzcd;v:imgview'
-
+export NNN_PLUG='f:fzcd;v:imgview;s:!echo $PWD/$nnn|pbcopy*'
+# export NNN_PLUG='f:fzcd;v:imgview;s:!echo $PWD/$nnn|xclip*'
