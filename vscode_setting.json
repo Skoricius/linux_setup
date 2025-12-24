@@ -9,6 +9,7 @@
   "workbench.iconTheme": "eq-material-theme-icons-darker",
   "extensions.ignoreRecommendations": false,
   "[javascript]": {},
+  // "terminal.integrated.profiles.linux": "zsh",
   "git.confirmSync": false,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "latex-workshop.view.pdf.viewer": "tab",
@@ -57,6 +58,36 @@
   "python.analysis.diagnosticSeverityOverrides": {
     "reportPrivateImportUsage": "none"
   },
+  // "vim.easymotion": true,
+  // "vim.highlightedyank.enable": true,
+  // "vim.useSystemClipboard": true,
+  // "vim.leader": "<space>",
+  // "vim.handleKeys": {
+  //     "<C-a>": false,
+  //     "<C-f>": false,
+  //     "<C-x>": false,
+  //     "<C-c>": false,
+  //     "<C-y>": false,
+  //     "<C-[>": false,
+  //     "<C-]>": false
+  // },
+  // "vim.normalModeKeyBindings": [
+  //     {
+  //         "before": [
+  //             "S"
+  //         ],
+  //         "after": [
+  //             "d",
+  //             "i",
+  //             "w",
+  //             "\"",
+  //             "0",
+  //             "P",
+  //         ]
+  //     }
+  // ],
+  // "vim.foldfix": true,
+  // "vim.replaceWithRegister": true,
   "autoDocstring.docstringFormat": "numpy",
   "githubPullRequests.createOnPublishBranch": "never",
   "editor.lineNumbers": "on",
@@ -122,6 +153,13 @@
     "asvetliakov.vscode-neovim": 1
   },
   "remoteHub.commitDirectlyWarning": "off",
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/luka/.config/nvim/init.lua",
+  "vscode-neovim.wslDistribution": "~/.config/nvim/init.lua",
+  "vscode-neovim.neovimInitVimPaths.win32": "~/.config/nvim/init.lua",
+  "vscode-neovim.neovimExecutablePaths.win32": "~/bin/nvim.appimage",
+  "vscode-neovim.logLevel": "info",
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/luka/.local/bin/nvim.appimage",
   "diffEditor.ignoreTrimWhitespace": false,
   "solidity.telemetry": false,
   "solidity.defaultCompiler": "localNodeModule",
@@ -172,6 +210,9 @@
   },
   "python.analysis.autoFormatStrings": true,
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  // to make neovim not crash
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 5,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
