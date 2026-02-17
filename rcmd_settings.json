@@ -1,0 +1,245 @@
+{
+  "windowSwitcherDimFocused" : false,
+  "switcherScreenPlacement" : 5,
+  "enableCycleHotkey" : true,
+  "appSort" : "name",
+  "notificationsPermissionsGranted" : false,
+  "minimizeOnlyFocusedWindowOnMinus" : true,
+  "windowSwitchOSDDelay" : 0,
+  "zeroAsLastFocusedWindow" : true,
+  "ignoredApps" : [
+
+  ],
+  "ignoredKeys" : [
+
+  ],
+  "appKeyAssignments" : [
+    {
+      "index" : 3,
+      "whenAlreadyFocusedAction" : 3,
+      "app" : {
+        "useCount" : 364,
+        "switchCount" : 0,
+        "originalName" : "iTerm",
+        "identifier" : "com.googlecode.iterm2:825",
+        "path" : "/Applications/iTerm.app"
+      },
+      "key" : "t"
+    },
+    {
+      "index" : 1,
+      "whenAlreadyFocusedAction" : 3,
+      "app" : {
+        "useCount" : 488,
+        "switchCount" : 0,
+        "originalName" : "Chrome",
+        "identifier" : "com.google.Chrome:776",
+        "path" : "/Applications/Google Chrome.app"
+      },
+      "key" : "c"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 32,
+        "switchCount" : 0,
+        "originalName" : "Activity Monitor",
+        "identifier" : "com.apple.ActivityMonitor:784",
+        "path" : "/System/Applications/Utilities/Activity Monitor.app"
+      },
+      "key" : "a"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 0,
+        "switchCount" : 0,
+        "originalName" : "Finder",
+        "identifier" : "com.apple.finder:841",
+        "path" : "/System/Library/CoreServices/Finder.app"
+      },
+      "key" : "f"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 29,
+        "switchCount" : 0,
+        "originalName" : "Outlook",
+        "identifier" : "com.microsoft.Outlook:815",
+        "path" : "/Applications/Microsoft Outlook.app"
+      },
+      "key" : "o"
+    },
+    {
+      "index" : 1,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 238,
+        "switchCount" : 0,
+        "originalName" : "Zotero",
+        "identifier" : "org.zotero.zotero:823",
+        "path" : "/Applications/Zotero.app"
+      },
+      "key" : "z"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 3,
+      "app" : {
+        "useCount" : 33,
+        "switchCount" : 1,
+        "originalName" : "Visual Studio Code",
+        "identifier" : "com.microsoft.VSCode:785",
+        "path" : "/Applications/Visual Studio Code.app"
+      },
+      "key" : "v"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 313,
+        "switchCount" : 1,
+        "originalName" : "Skim",
+        "identifier" : "net.sourceforge.skim-app.skim:800",
+        "path" : "/Applications/Skim.app"
+      },
+      "key" : "p"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 2,
+      "app" : {
+        "useCount" : 844,
+        "switchCount" : 0,
+        "originalName" : "Obsidian",
+        "identifier" : "md.obsidian:819",
+        "path" : "/Applications/Obsidian.app"
+      },
+      "key" : "n"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 3,
+      "app" : {
+        "useCount" : 2019,
+        "switchCount" : 1,
+        "originalName" : "Slack",
+        "identifier" : "com.tinyspeck.slackmacgap:807",
+        "path" : "/Applications/Slack.app"
+      },
+      "key" : "s"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 3,
+      "app" : {
+        "useCount" : 19,
+        "switchCount" : 0,
+        "originalName" : "System Settings",
+        "identifier" : "com.apple.systempreferences:13031",
+        "path" : "/System/Applications/System Settings.app"
+      },
+      "key" : "y"
+    },
+    {
+      "index" : 0,
+      "whenAlreadyFocusedAction" : 3,
+      "app" : {
+        "useCount" : 0,
+        "switchCount" : 0,
+        "originalName" : "Teams",
+        "identifier" : "com.microsoft.teams2:810",
+        "path" : "/Applications/Microsoft Teams.app"
+      },
+      "key" : "e"
+    }
+  ],
+  "activateAllWindows" : true,
+  "showWindowSwitcher" : false,
+  "whenAlreadyFocusedAction" : 3,
+  "enableHideOnFocusHotkey" : false,
+  "windowTriggerKeys" : [
+    5
+  ],
+  "appSwitcherFeatures" : 34,
+  "windowOnlySwitchOSDDelay" : 0,
+  "windowKeyPatterns" : [
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext.4"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext.3"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext.2"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.sublimetext."
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.visualstudio.code.oss"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.visualstudio.code"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCodiumInsiders"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCode"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCodeInsiders"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.microsoft.VSCod"
+    },
+    {
+      "pattern" : ".* — [^\\w\\d]*(.)",
+      "id" : "com.todesktop."
+    }
+  ],
+  "focusOnKeyUp" : true,
+  "keyTapThreshold" : 0.1400000000000001,
+  "enableStaticCycle" : true,
+  "alwaysHideOthers" : false,
+  "windowKeyAssignments" : [
+    {
+      "scriptRunner" : null,
+      "appURL" : "/Applications/Google Chrome.app",
+      "key" : "g",
+      "url" : "https://gemini.google.com",
+      "name" : "Gemini"
+    }
+  ],
+  "triggerKeys" : [
+    4
+  ],
+  "minimizeKey" : "minus",
+  "allowWindowSwitcher" : true,
+  "appSortReverse" : false,
+  "showAppSwitcher" : true,
+  "hideStaticSettings" : false,
+  "windowSwitcherAppearance" : "comfortable",
+  "enableAssignHotkey" : true,
+  "windowSwitcherFeatures" : 57,
+  "specialKey" : "equal",
+  "hideOnlyFocusedAppOnMinus" : false,
+  "appSwitcherUseNumbersForWindows" : true,
+  "fnWindowSwitching" : true
+}
