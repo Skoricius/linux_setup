@@ -6,6 +6,7 @@
   // --------------------------------------------------------
   // FIXED: Must be "disabled" instead of false
   "share": "disabled",
+  "default_agent": "plan",
 
   // --------------------------------------------------------
   // PERMISSIONS (Replaces the legacy 'tools' block)
@@ -33,12 +34,28 @@
     ".ignore",             // Create this file in your project root and add *.ipynb
     "CONTRIBUTING.md"      // (Optional) Point to team coding standards
   ],
-  "autoApproveCommands": [
-    "ls", "tree", "pwd", "find", "fd",
-    "cat", "head", "tail", "grep", "rg", "ag",
-    "awk", "wc", "sort", "uniq",
-    "git status", "git log", "git diff", "git branch", "git show"
-  ]
-
+  "permission": {
+    "bash": {
+      "ls *": "allow",
+      "cat *": "allow",
+      "grep *": "allow",
+      "rg *": "allow",
+      "find *": "allow",
+      "fd *": "allow",
+      "tail *": "allow",
+      "head *": "allow",
+      "tree": "allow",
+      "pwd": "allow",
+      "awk *": "allow",
+      "wc *": "allow",
+      "sort *": "allow",
+      "uniq *": "allow",
+      "git status": "allow",
+      "git log*": "allow",
+      "git diff*": "allow",
+      "git branch": "allow",
+      "git show*": "allow"
+    }
+  }
 }
 
