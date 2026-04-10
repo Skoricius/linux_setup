@@ -1,0 +1,61 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  
+  // --------------------------------------------------------
+  // SECURITY & ENTERPRISE SETTINGS
+  // --------------------------------------------------------
+  // FIXED: Must be "disabled" instead of false
+  "share": "disabled",
+  "default_agent": "plan",
+
+  // --------------------------------------------------------
+  // PERMISSIONS (Replaces the legacy 'tools' block)
+  // --------------------------------------------------------
+  // This explicitly controls what the agent is allowed to execute
+  "permission": {
+    "edit": "allow",          // Allow the agent to write code
+    "bash": {                 // Granular shell execution rules
+      "rm -rf *": "deny",     // Hard block dangerous deletions
+      "sudo *": "ask",        // Require your approval for sudo
+      "*": "ask"              // Require your approval for standard terminal commands
+    },
+    "webfetch": "allow",
+    "skill": {
+      "*": "allow",
+      "dangerous-*": "deny"
+    }
+  },
+
+  // --------------------------------------------------------
+  // CUSTOM INSTRUCTIONS & RULES
+  // --------------------------------------------------------
+  // FIXED: Use this array to load your ignore rules and project docs
+  "instructions": [
+    ".ignore",             // Create this file in your project root and add *.ipynb
+    "CONTRIBUTING.md"      // (Optional) Point to team coding standards
+  ],
+  "permission": {
+    "bash": {
+      "ls *": "allow",
+      "cat *": "allow",
+      "grep *": "allow",
+      "rg *": "allow",
+      "find *": "allow",
+      "fd *": "allow",
+      "tail *": "allow",
+      "head *": "allow",
+      "tree": "allow",
+      "pwd": "allow",
+      "awk *": "allow",
+      "wc *": "allow",
+      "sort *": "allow",
+      "uniq *": "allow",
+      "git status": "allow",
+      "git log*": "allow",
+      "git diff*": "allow",
+      "git branch": "allow",
+      "git show*": "allow"
+    }
+  }
+}
+

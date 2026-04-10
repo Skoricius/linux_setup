@@ -1,0 +1,2 @@
+# Block all Jupyter Notebooks from AI access
+*.ipynb
