@@ -32,6 +32,13 @@
   "instructions": [
     ".ignore",             // Create this file in your project root and add *.ipynb
     "CONTRIBUTING.md"      // (Optional) Point to team coding standards
+  ],
+  "autoApproveCommands": [
+    "ls", "tree", "pwd", "find", "fd",
+    "cat", "head", "tail", "grep", "rg", "ag",
+    "awk", "wc", "sort", "uniq",
+    "git status", "git log", "git diff", "git branch", "git show"
   ]
+
 }
 
