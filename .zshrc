@@ -34,9 +34,22 @@ alias dirspace="du -h --max-depth=1 | sort -h"
 alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 alias telegram="python ~/.local/bin/telegram.py"
-alias acpoet='source $(poetry env info --path)/bin/activate'
+# alias acpoet='source $(poetry env info --path)/bin/activate'
+alias reac='deactivate && source $(poetry env info --path)/bin/activate'
 alias msync="rsync -axS --info=progress2"
-# echo "alias"
+# AeroSpace Window Switcher
+aff() {
+  aerospace list-windows --all | fzf --bind 'enter:execute(aerospace focus --window-id {1})+abort'
+}
+alias acenv='() {
+  if [[ -f uv.lock ]]; then
+    source .venv/bin/activate
+  elif [[ -f poetry.lock ]]; then
+    source $(poetry env info --path)/bin/activate
+  else
+    echo "No uv.lock or poetry.lock found in current directory"
+  fi
+}'
 
 alias vi="nvim"
 alias lgit="lazygit"
@@ -138,3 +151,6 @@ n ()
 set --export NNN_FIFO "/tmp/nnn.fifo"# nnn configuratioalias ls="nnn -e"
 export NNN_PLUG='f:fzcd;v:imgview;s:!echo $PWD/$nnn|pbcopy*'
 # export NNN_PLUG='f:fzcd;v:imgview;s:!echo $PWD/$nnn|xclip*'
+
+# opencode
+export PATH=/Users/lukaskoric/.opencode/bin:$PATH
