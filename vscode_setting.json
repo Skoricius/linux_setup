@@ -1,9 +1,31 @@
 {
-  "center-editor-window.threeStateToggle": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "explorer.confirmDelete": false,
   "git.autofetch": true,
   "explorer.confirmDragAndDrop": false,
+  "remote.SSH.remotePlatform": {
+    "192.168.128.200": "linux",
+    "dreams-ai.com": "linux",
+    "10.11.82.125": "linux",
+    "210.3.146.42": "linux",
+    "steve-local": "linux",
+    "brucelee": "linux",
+    "bacchus": "linux",
+    "pi": "linux",
+    "ferrari": "linux",
+    "192.168.0.101": "linux",
+    "pimoke": "linux",
+    "office": "linux",
+    "moke": "windows",
+    "rlazure": "linux",
+    "nqccvnet": "linux",
+    "mary": "linux",
+    "20.254.30.250": "linux",
+    "20.90.107.219": "linux",
+    "lukaazure": "linux",
+    "azuerbeefy": "linux",
+    "azurebeefy": "linux"
+  },
   "editor.suggestSelection": "first",
   "editor.formatOnSave": true,
   "workbench.iconTheme": "eq-material-theme-icons-darker",
@@ -21,19 +43,13 @@
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
-  "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
-  "workbench.preferredLightColorTheme": "GitHub Light Default",
   "editor.wordWrap": "on",
   "latex-workshop.latex.recipe.default": "lastUsed",
   "jupyter.askForKernelRestart": false,
-  "spellright.language": [
-    "en-GB"
-  ],
   "terminal.integrated.inheritEnv": false,
   "files.watcherExclude": {
     "env/**": true
   },
-  "ltex.language": "en-GB",
   "remote.SSH.connectTimeout": 20,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
@@ -58,37 +74,6 @@
   "python.analysis.diagnosticSeverityOverrides": {
     "reportPrivateImportUsage": "none"
   },
-  // "vim.easymotion": true,
-  // "vim.highlightedyank.enable": true,
-  // "vim.useSystemClipboard": true,
-  // "vim.leader": "<space>",
-  // "vim.handleKeys": {
-  //     "<C-a>": false,
-  //     "<C-f>": false,
-  //     "<C-x>": false,
-  //     "<C-c>": false,
-  //     "<C-y>": false,
-  //     "<C-[>": false,
-  //     "<C-]>": false
-  // },
-  // "vim.normalModeKeyBindings": [
-  //     {
-  //         "before": [
-  //             "S"
-  //         ],
-  //         "after": [
-  //             "d",
-  //             "i",
-  //             "w",
-  //             "\"",
-  //             "0",
-  //             "P",
-  //         ]
-  //     }
-  // ],
-  // "vim.foldfix": true,
-  // "vim.replaceWithRegister": true,
-  "autoDocstring.docstringFormat": "numpy",
   "githubPullRequests.createOnPublishBranch": "never",
   "editor.lineNumbers": "on",
   "editor.glyphMargin": true,
@@ -107,8 +92,6 @@
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.latex.autoBuild.run": "onSave",
   "zenMode.hideLineNumbers": false,
-  "rust-analyzer.debug.engine": "vadimcn.vscode-lldb",
-  "rust-analyzer.debug.openDebugPane": true,
   "git.openRepositoryInParentFolders": "never",
   "notebook.lineNumbers": "on",
   "jupyter.interactiveWindow.textEditor.executeSelection": true,
@@ -118,98 +101,28 @@
   "pylint.args": [
     "--max-line-length=89"
   ],
-  "spellright.latexSpellParameters": [
-    "author",
-    "title",
-    "subtitle",
-    "date",
-    "chapter",
-    "section\\*?",
-    "subsection\\*?",
-    "subsubsection\\*?",
-    "part",
-    "paragraph",
-    "subparagraph",
-    "text(rm|sf|tt|md|bf|up|it|sl|sc|normal)",
-    "underline",
-    "emph",
-    "item",
-    "footnote(text)?",
-    "caption(of)?",
-    "subcaption(of)?",
-    "multicolumn",
-    "href",
-    "hyperref",
-    "institute",
-    "frametitle",
-    "framesubtitle",
-    "begin\\{frame\\}"
-  ],
-  "flake8.args": [
-    "--max-line-length=89"
-  ],
-  "cmake.showOptionsMovedNotification": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "remoteHub.commitDirectlyWarning": "off",
-  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
-  "vscode-neovim.neovimInitVimPaths.linux": "/home/luka/.config/nvim/init.lua",
-  "vscode-neovim.wslDistribution": "~/.config/nvim/init.lua",
-  "vscode-neovim.neovimInitVimPaths.win32": "~/.config/nvim/init.lua",
-  "vscode-neovim.neovimExecutablePaths.win32": "~/bin/nvim.appimage",
-  "vscode-neovim.logLevel": "info",
-  "vscode-neovim.neovimExecutablePaths.linux": "/home/luka/.local/bin/nvim.appimage",
   "diffEditor.ignoreTrimWhitespace": false,
-  "solidity.telemetry": false,
-  "solidity.defaultCompiler": "localNodeModule",
-  "editor.defaultFormatter": "ms-python.autopep8",
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-  ],
-  "makefile.configureOnOpen": false,
+  "editor.defaultFormatter": "ms-python.black-formatter",
   "dataWrangler.columnInsights.displayOnOpen": false,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.fontLigatures": true,
-  "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
-  "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
-  "workbench.colorTheme": "GitHub Dark Dimmed",
-  "pythonTestExplorer.testFramework": "pytest",
-  "indentRainbow.indicatorStyle": "light",
-  "indentRainbow.lightIndicatorStyleLineWidth": 4,
-  "indentRainbow.errorColor": "rgba(128,32,32,0.1)",
+  "workbench.preferredHighContrastColorTheme": "Dark Modern",
+  "workbench.preferredHighContrastLightColorTheme": "Atom One Light",
   "dataWrangler.experiments.copilot.enabled": false,
   "dataWrangler.panels.displayOnTabFocus": false,
-  "indentRainbow.ignoreErrorLanguages": [
-    "python",
-    "markdown"
-  ],
-  "cmake.showConfigureWithDebuggerNotification": false,
   "debug.onTaskErrors": "abort",
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   // these settings are 'false' by default, so removing those should also work
   "python.testing.unittestEnabled": false,
-  "python.testing.nosetestsEnabled": false,
   "python.testing.pytestEnabled": true,
-  "cmake.debugConfig": {
-    "name": "(lldb) Launch",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${command:cmake.launchTargetPath}",
-    "args": [],
-    "cwd": "${workspaceFolder}",
-    "stopAtEntry": false,
-    "externalConsole": false,
-    "MIMode": "lldb",
-    "miDebuggerPath": "/usr/bin/lldb"
-  },
   "python.analysis.autoFormatStrings": true,
-  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   // to make neovim not crash
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 5,
@@ -366,5 +279,27 @@
   },
   "vim.sneak": true,
   "vim.sneakReplacesF": true,
-  "vim.easymotionDimBackground": false
+  "vim.easymotionDimBackground": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.selectedCompletionModel": "",
+  "search.exclude": {
+    "data/**": true
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.preferredLightColorTheme": "Atom One Light",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
+  "jupyter.debugJustMyCode": false,
+  "debugpy.debugJustMyCode": false,
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  "python.analysis.exclude": [
+    "**/data",
+    "**/.venv"
+  ]
 }
