@@ -1,0 +1,91 @@
+#!/usr/bin/env bash
+#
+# slack-notify - send a message to a Slack Incoming Webhook
+#
+# Setup:
+#   1. Save your webhook URL somewhere it won't be committed to git, e.g.:
+#        echo 'https://hooks.slack.com/services/XXX/YYY/ZZZ' > ~/.config/slack-webhook-url
+#      chmod 600 ~/.config/slack-webhook-url
+#   OR
+#   2. Export it as an env var in your shell profile:
+#        export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/XXX/YYY/ZZZ"
+#
+# Usage:
+#   slack-notify "Server X is down"
+#   echo "some log line" | slack-notify
+#   slack-notify -c '#ff0000' "Disk usage critical"   # colored side-bar (attachment)
+
+set -euo pipefail
+
+CONFIG_FILE="${SLACK_WEBHOOK_CONFIG:-$HOME/.config/slack-webhook-url}"
+COLOR=""
+
+usage() {
+  echo "Usage: $(basename "$0") [-c '#RRGGBB'] \"message\"" >&2
+  echo "       echo \"message\" | $(basename "$0")" >&2
+  exit 1
+}
+
+# Parse optional color flag
+while getopts ":c:" opt; do
+  case "$opt" in
+    c) COLOR="$OPTARG" ;;
+    *) usage ;;
+  esac
+done
+shift $((OPTIND - 1))
+
+# Resolve webhook URL: env var takes precedence, then config file
+if [[ -n "${SLACK_WEBHOOK_URL:-}" ]]; then
+  WEBHOOK_URL="$SLACK_WEBHOOK_URL"
+elif [[ -f "$CONFIG_FILE" ]]; then
+  WEBHOOK_URL="$(<"$CONFIG_FILE")"
+else
+  echo "Error: no webhook URL found." >&2
+  echo "Set \$SLACK_WEBHOOK_URL or create $CONFIG_FILE" >&2
+  exit 1
+fi
+
+# Get message from argument or stdin
+if [[ $# -gt 0 ]]; then
+  MESSAGE="$*"
+elif ! [[ -t 0 ]]; then
+  MESSAGE="$(cat)"
+else
+  usage
+fi
+
+if [[ -z "$MESSAGE" ]]; then
+  echo "Error: empty message" >&2
+  exit 1
+fi
+
+# Build JSON payload safely (works without jq via python3, falls back to naive escaping)
+build_payload() {
+  if command -v python3 >/dev/null 2>&1; then
+    python3 - "$MESSAGE" "$COLOR" <<'PY'
+import json, sys
+message, color = sys.argv[1], sys.argv[2]
+if color:
+    payload = {"attachments": [{"color": color, "text": message}]}
+else:
+    payload = {"text": message}
+print(json.dumps(payload))
+PY
+  else
+    # naive fallback: escape backslashes and double quotes
+    escaped="${MESSAGE//\\/\\\\}"
+    escaped="${escaped//\"/\\\"}"
+    printf '{"text":"%s"}' "$escaped"
+  fi
+}
+
+PAYLOAD="$(build_payload)"
+
+RESPONSE="$(curl -sS -X POST -H 'Content-type: application/json' \
+  --data "$PAYLOAD" "$WEBHOOK_URL")"
+
+if [[ "$RESPONSE" != "ok" ]]; then
+  echo "Slack responded unexpectedly: $RESPONSE" >&2
+  exit 1
+fi
