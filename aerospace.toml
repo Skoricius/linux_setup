@@ -207,6 +207,7 @@ on-mode-changed = []
     alt-shift-o = 'exec-and-forget bash ~/.config/aerospace/open-app.sh'
     alt-shift-f = 'layout floating tiling' # Toggles between floating and tiling
 
+    alt-0 = 'mode resize'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -227,6 +228,10 @@ on-mode-changed = []
 [mode.resize.binding]          # 2. Declare 'resize' binding mode
     minus = 'resize smart -50'
     equal = 'resize smart +50'
+    b = 'balance-sizes'       # Snap back to 50-50
+
+    enter = 'mode main'
+    esc = 'mode main'
 
 
 # [[on-window-detected]]
@@ -236,6 +241,15 @@ on-mode-changed = []
 # [[on-window-detected]]
 #     if.app-id = 'com.apple.systempreferences'
 #     run = 'layout floating'
+
+
+[[on-window-detected]]
+    if.app-id = 'md.obsidian'
+    run = 'move-node-to-workspace N'
+
+[[on-window-detected]]
+    if.app-id = 'com.remarkable.desktop'
+    run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
     if.app-id = 'com.microsoft.teams2'
@@ -278,6 +292,18 @@ on-mode-changed = []
     run = 'move-node-to-workspace A' 
 
 [[on-window-detected]]
+    if.app-id = 'ai.opencode.desktop'
+    run = 'move-node-to-workspace A' 
+
+[[on-window-detected]]
+    if.app-id = 'dev.zed.Zed'
+    run = 'move-node-to-workspace Z' 
+
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace M' 
+
+[[on-window-detected]]
     if.app-id = 'com.apple.systempreferences'
     run = 'layout floating'
 
@@ -287,4 +313,12 @@ on-mode-changed = []
 
 [[on-window-detected]]
     if.window-title-regex-substring = 'settings'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.heimdalsecurity.heimdalAgent'
     run = 'layout floating'

@@ -1,0 +1,45 @@
+{
+  "cleanupPeriodDays": 30,
+  "permissions": {
+    "allow": [
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(find *)",
+      "Bash(fd *)",
+      "Bash(tail *)",
+      "Bash(head *)",
+      "Bash(tree)",
+      "Bash(pwd)",
+      "Bash(awk *)",
+      "Bash(wc *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(git status)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git branch)",
+      "Bash(git show*)",
+      "WebFetch",
+      "Edit",
+      "Write",
+      "Skill"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Skill(dangerous-*)",
+      "Read(**/*.ipynb)"
+    ],
+    "ask": [
+      "Bash(sudo *)"
+    ],
+    "defaultMode": "auto"
+  },
+  "theme": "auto",
+  "fileCheckpointingEnabled": true,
+  "autoUploadSessions": false,
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true
+  }
+}
