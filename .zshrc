@@ -34,6 +34,7 @@ alias dirspace="du -h --max-depth=1 | sort -h"
 alias co="code ."
 alias gitree="git log --graph --pretty=oneline --abbrev-commit"
 alias telegram="python ~/.local/bin/telegram.py"
+alias nb2py="jupytext --to py:percent"
 # alias acpoet='source $(poetry env info --path)/bin/activate'
 alias reac='deactivate && source $(poetry env info --path)/bin/activate'
 alias msync="rsync -axS --info=progress2"
@@ -52,6 +53,8 @@ alias acenv='() {
 }'
 
 alias vi="nvim"
+alias vi.="nvim ."
+alias avi="acenv && nvim ."
 alias lgit="lazygit"
 # add nvim as default editor
 export EDITOR=nvim
